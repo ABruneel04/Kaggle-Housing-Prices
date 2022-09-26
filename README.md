@@ -1,7 +1,7 @@
 # Kaggle-Housing-Prices
 
 This code creates a Linear Regression model that predicts house prices for the Kaggle Housing prices competition (linked below): 
-<br>(https://www.kaggle.com/c/house-prices-advanced-regression-techniques)
+<br>https://www.kaggle.com/c/house-prices-advanced-regression-techniques
 <br>Inspiration for initial data cleaning:
 <br>https://www.dataquest.io/blog/kaggle-getting-started/
 <br><br>This was my first chance to explore Machine Learning techniques that included data cleaning, feature engineering, and data visualization prior to building my model. Over 70 features are included in the dataset, so a big component of building a successful model is finding the features that are significant in building one. To begin with, I referenced some other submitted codes and once I got a feel for how they did their feature engineering, I worked on doing some of my own changes on top of that. I began by splitting the data into Numerical and Categorical features. Using the correlation of the numerical features, I limited the list of features I used to those that were the most highly correlated to the Sale Price of a house (positively or negatively). From there, I explored each of the numerical features I planned on using in the model, and removed outliers that would harm its generalizability. I started with the most highly correlated features because I was more liberal with removing outliers from the most important features. After that, I explored some of the categorical features and converted some into dummy variables that could be interpreted by the model more easily (e.g. Abnormal sale condition resulting in a higher sale price, while the other conditions were relatively equal).
